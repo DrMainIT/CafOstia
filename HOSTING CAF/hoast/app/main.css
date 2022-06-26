@@ -1,0 +1,277 @@
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  .title{
+    align-items: center;
+    text-align: center;
+    font: 1000 normal 1rem/1.5 Ubuntu, sans-serif;
+    font-size: 45px;
+    margin: 40px;        
+    letter-spacing: 3px;
+    color: rgb(80, 106, 177);
+    font-weight: bold;
+  }
+  .menuTendina {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .menuTendina div {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+    transition: all 0.3s ease;
+  }
+ 
+  .servizi{
+    margin-top: 300px;
+    align-items: center;
+    text-align: center;
+  }
+  /* css immagini che scorrono  */
+
+
+.content-imgScroll{
+  padding: 5px;
+  margin: 10px;
+}
+div.content-imgScroll a{
+  text-decoration: none;
+  border: none;
+}
+div.content-imgScroll p{
+  font-size: 40px;
+  
+}
+.content{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+
+}
+.content__row {
+  display: flex;
+  width: 100%;
+  margin: 5px 0;
+  justify-content: space-around; 
+  gap: 20px; 
+  margin-left: 100px;
+  margin-right: 100px;
+  border-bottom: solid rgb(195, 194, 194) 1px;
+  padding-bottom: 60px;
+}
+
+.content__img{
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+ 
+}
+.content__a{
+text-decoration: none;
+align-items: center;
+flex: 1;
+}
+.content__p{
+  text-align: center;
+  font: 1000 normal 1rem/1.5 Ubuntu, sans-serif;
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+
+.content__span{
+color: rgb(120, 179, 216);
+}
+.content__text{
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: initial;
+  color: rgb(41, 41, 41);
+}
+.content__MiniBox__a{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.content__MiniBox__img{
+width: 30%;
+
+
+}
+.content__MiniBox__p{
+  color: rgb(90, 90, 161);
+  font-size: 30px;
+  letter-spacing: 1px;
+  font-family: 'Bebas Neue', cursive;
+  max-width: 500px;
+  padding-left: 5px;
+}
+
+.content__MiniBox__span{
+  color: black;
+  font-size: 20px;
+}
+
+
+/* footer */
+
+footer{
+  display: block;
+  min-height: 150px;
+  background-color: rgb(35, 60, 107);
+  width: 100%;
+  margin-top: 150px;
+
+}
+.footer__row{
+display: flex;
+align-items: center;
+margin-left: 20px; 
+justify-content: center;
+
+}
+.footer__row div{
+  padding-top: 30px;
+  margin-right: 100px;
+  color: white;
+  font-size: 25px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
+}
+.footer__Imglogo{
+  width: 20%;
+  margin-bottom: initial;
+}
+.footer__descrizioneImg{
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 2px;
+  width: 20%;
+  color: white;
+  margin: 50px;
+  margin-top: initial;
+  text-align: center;
+}
+.footer__creator{
+  margin-top: 100px;
+justify-content: flex-end;
+display: flex;
+}
+
+@media screen and (max-width:1524px) {
+    .nav-links {
+      width: 60%;
+    }
+  }
+  
+@media screen and (max-width:768px) {
+    html{
+        display: block;
+    }
+    
+    body {
+      overflow-x: hidden;
+    }
+    .nav-links {
+      position: absolute;
+      right: 0px;
+      height: 92vh;
+      top: 120px;
+      background-color: rgb(129, 192, 231);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50%;
+      transform: translateX(100%);
+      transition: transform 0.5s ease-in;
+    }
+    .nav-links li {
+      opacity: 0;
+      display: none;
+    }
+    .menuTendina {
+      display: block;
+    }
+ 
+  
+  .dropdown-content {
+    display: initial;
+    align-items: center;
+    position: initial;
+    background-color: rgb(129, 192, 231);
+  }
+  .dropbtn {
+    display: none;
+
+  }
+
+  .dropdown-content a {
+    color:  rgb(255, 255, 255);
+    margin: 8%;
+  }
+  .dropdown-content a:hover {
+  color: rgb(196, 215, 224);
+  }
+.dropdown-content a:hover {background-color: initial}
+  
+.dropdown:hover .dropdown-content {display: initial;}
+  
+.dropdown:hover .dropbtn {background-color: initial}
+
+}
+
+
+
+  /* animazione */
+  
+@keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
+@media screen and (max-width:1437px) {
+  .content__MiniBox__a{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .content__MiniBox__img{
+    width: 60%;
+  }
+  
+}
+@media screen and (max-width:955px) {
+  
+  .content__row {
+  display: initial; 
+  width: 60%;  
+  margin: 0;
+  padding: 0;    
+  }
+  .content__p{
+    margin: 0;
+    padding: 0; 
+  }
+  .content__a{
+  
+    align-items: initial;
+    flex: 1;
+  }
+}
+
+@media screen and ( max-width:572px){
+  body{
+    position: absolute;
+  }
+}
