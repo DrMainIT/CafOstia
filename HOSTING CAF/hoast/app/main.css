@@ -140,22 +140,16 @@ justify-content: center;
   margin-right: 100px;
   color: white;
   font-size: 25px;
-  font-family: 'Montserrat', sans-serif;
   font-weight: lighter;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  
 }
 .footer__Imglogo{
   width: 20%;
   margin-bottom: initial;
 }
-.footer__descrizioneImg{
-  font-family: 'Montserrat', sans-serif;
-  letter-spacing: 2px;
-  width: 20%;
-  color: white;
-  margin: 50px;
-  margin-top: initial;
-  text-align: center;
-}
+
 .footer__creator{
   margin-top: 100px;
 justify-content: flex-end;
@@ -221,6 +215,11 @@ display: flex;
 .dropdown:hover .dropdown-content {display: initial;}
   
 .dropdown:hover .dropbtn {background-color: initial}
+.footer__row div{
+  font-size: 30px;
+  font-weight: lighter;
+  font-family: 'Ubuntu', sans-serif;
+}
 
 }
 

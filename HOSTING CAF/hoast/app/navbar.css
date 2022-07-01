@@ -221,17 +221,6 @@ i.fa-instagram:hover{ color: beige;}
 
   
 }
-@media screen and (max-width: 500px) {
-  .nav-responsive a {
-    font-size: 25px;
-  }
-}
-@media screen and (max-width: 422px) {
-  .nav-responsive a {
-    font-size: 20px;
-  }
-}
-
 
 
 
