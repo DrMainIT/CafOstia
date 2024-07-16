@@ -1,10 +1,3 @@
 # CafOstia
 
-progetto realizzato per un caf con i seguenti linguaggi di programmazione
-
-`html`
-
-`css`
-
-
-`javascript`
+simple website created with `html` `css` `javascript`
